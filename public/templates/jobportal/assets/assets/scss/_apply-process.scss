@@ -1,0 +1,60 @@
+/*======================================
+    Apply Process CSS
+========================================*/
+
+.apply-process {
+    background-color: $theme-color;
+    padding: 80px 0;
+
+    .process-item {
+        padding-left: 92px;
+        position: relative;
+        padding-right: 25px;
+
+        i {
+            font-size: 30px;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 65px;
+            width: 65px;
+            border: 1px dashed #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 62px;
+            transition: all 0.4s ease;
+        }
+
+        &:hover i {
+            background-color: $white;
+            color: $theme-color;
+            border-color: transparent;
+            transform: rotate(360deg);
+        }
+
+        h4 {
+            font-size: 18px;
+            color: $white;
+            position: relative;
+            display: block;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 50px;
+                background-color: $white;
+            }
+        }
+
+        p {
+            color: $white;
+            display: block;
+        }
+    }
+}

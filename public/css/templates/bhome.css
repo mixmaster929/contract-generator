@@ -1,0 +1,8 @@
+.completed-cases .no-js .owl-carousel, .completed-cases .owl-carousel.owl-loaded {
+    overflow: hidden;
+    position: relative;
+    right: -0%;
+}
+.own-nav{
+    display: none !important;
+}

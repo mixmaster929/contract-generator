@@ -1,0 +1,121 @@
+/*======================================
+    Browse Resumes CSS
+========================================*/
+
+.browse-resumes {
+    background-color: $gray;
+
+    .inner-content {
+        padding: 30px;
+        background-color: $white;
+        border: 1px solid #eee;
+        border-radius: 6px;
+
+        .resume-item {
+            position: relative;
+            background-color: $white;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-left: 190px;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin: 0;
+                padding-bottom: 0;
+                border: none;
+            }
+
+            img {
+                height: auto;
+                width: 160px;
+                border-radius: 4px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .right {
+                position: relative;
+                top: -10px;
+
+                h3 {
+                    a {
+                        font-size: 20px;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+
+                .deg {
+                    display: block;
+                    margin-top: 5px;
+                }
+
+                .experience {
+                    margin-top: 10px;
+
+                    li {
+                        display: block;
+                        margin-bottom: 3px;
+
+                        span {
+                            color: $theme-color;
+                            display: inline-block;
+                            margin-left: 3px;
+                        }
+
+                        i {
+                            display: inline-block;
+                            margin-right: 3px;
+                            color: $theme-color;
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .skills {
+                    margin-top: 10px;
+
+                    li {
+                        display: inline-block;
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                        margin-right: 3px;
+                        position: relative;
+                        background: #2042e314;
+                        color: $theme-color;
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                    }
+                }
+
+                .description {
+                    margin-top: 20px;
+                }
+
+                .year-exp {
+                    padding: 5px 15px;
+                    color: $white;
+                    font-size: 13px;
+                    border-radius: 3px;
+                    background-color: $theme-color;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                        box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+                    }
+                }
+            }
+        }
+    }
+}

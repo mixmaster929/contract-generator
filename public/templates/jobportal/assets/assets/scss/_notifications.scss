@@ -1,0 +1,49 @@
+/*======================================
+    Notifications CSS
+========================================*/
+.notifications {
+    background-color: $gray;
+
+    .job-items {
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 6px;
+
+        .manage-content {
+            padding: 25px 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+
+            .can-img {
+                img {
+                    width: 60px;
+                    margin: 5px 15px;
+                }
+            }
+
+            .time {
+                p {
+                    background: #2042e314;
+                    color: $theme-color;
+                    padding: 8px 14px;
+                    border-radius: 3px;
+                    font-size: 13px;
+                    display: inline-block;
+                    float: right;
+
+                    i {
+                        display: inline-block;
+                        margin-right: 3px;
+                    }
+                }
+            }
+
+        }
+    }
+}

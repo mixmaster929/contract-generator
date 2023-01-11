@@ -1,0 +1,25 @@
+span.req{
+    color: red;
+}
+
+.select2 {
+    width: 100%!important; /* overrides computed width, 100px in your demo */
+}
+
+.select2-container .select2-selection--single {
+    padding-top: 10px;
+    height: calc(1.5em + 1.25rem + 2px) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+
+    margin-top: 7px !important;
+}
+
+.select2-selection__arrow {
+    display: block;
+}
+
+.select2-container .select2-search--inline {
+    display: block;
+}

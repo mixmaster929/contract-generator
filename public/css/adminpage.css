@@ -1,0 +1,8 @@
+.main-content .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.main-content > .card-body {
+    padding: 0px;
+}

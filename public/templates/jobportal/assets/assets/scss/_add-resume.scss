@@ -1,0 +1,132 @@
+/*======================================
+    Add Resume CSS
+========================================*/
+.add-resume {
+    background-color: $gray;
+
+    .add-resume-inner {
+        padding: 40px;
+        border: 1px solid #eee;
+        border-radius: 6px;
+        background-color: $white;
+
+        .single-section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: $black;
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .add-post-btn {
+            ul {
+                position: relative;
+                top: -8px;
+
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        font-size: 13px;
+                        position: relative;
+                        background: #2042e314;
+                        color: $black;
+                        padding: 10px 15px;
+                        border-radius: 3px;
+
+                        &:hover {
+                            color: $white;
+                            background-color: $theme-color;
+                        }
+
+                        i {
+                            display: inline-block;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .post-header {
+            margin-bottom: 30px;
+            overflow: hidden;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                color: $black;
+                float: left;
+            }
+
+            p {
+                float: right;
+                position: relative;
+                top: 2px;
+
+                a {
+                    color: $theme-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .form-ad {
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 5px;
+                    color: $black;
+                }
+
+                input {
+                    height: 50px;
+                    width: 100%;
+                    padding: 0px 20px;
+                    border: 1px solid #eee;
+                    border-radius: 4px;
+                    font-size: 14px;
+                }
+
+                textarea {
+                    height: 200px;
+                    width: 100%;
+                    padding: 20px;
+                    border: 1px solid #eee;
+                    border-radius: 4px;
+                    font-size: 14px;
+                }
+
+                .action-buttons {
+                    position: relative;
+                }
+
+                .upload-button input[type=file] {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 100;
+                    cursor: pointer;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

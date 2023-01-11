@@ -1,0 +1,30 @@
+.wizard > .content {
+    background:
+        #fff;
+    display: block;
+    margin: .5em;
+    min-height: 100px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 0px;
+}
+.wizard > .steps > ul {
+    padding: 0;
+    margin-bottom: 0;
+    display: block;
+}
+.wizard > .steps .disabled {
+    display: block;
+}
+.wizard > .steps > ul > li {
+    width: 20%;
+}
+@media(max-width:480px){
+    .wizard>.steps>ul>li{
+        width:100%
+    }
+
+}

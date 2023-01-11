@@ -1,0 +1,288 @@
+/*======================================
+    Modal CSS
+========================================*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.pos-abs-tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.z-index-supper {
+    z-index: 800;
+}
+
+.circle-32 {
+    max-width: 32px;
+    min-width: 32px;
+    max-height: 32px;
+    min-height: 32px;
+    border-radius: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    right: 20px;
+    top: 20px;
+    background: #eee !important;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+
+    &:hover {
+        background-color: $black !important;
+        color: $white !important;
+    }
+}
+
+.btn-reset {
+    background: transparent;
+    border: 0;
+}
+
+.modal.show .modal-dialog {
+    pointer-events: visible;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.modal {
+    .login-modal-main {
+        background-color: $white;
+        padding: 50px;
+        border-radius: 6px;
+        overflow: hidden;
+
+        .heading {
+            h3 {
+                color: #081828;
+                font-size: 26px;
+                font-weight: 700;
+                position: relative;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                line-height: 32px;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 50px;
+                    background-color: $theme-color;
+                }
+            }
+
+        }
+
+        .social-login {
+            margin-top: 30px;
+
+            ul {
+                li {
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        text-align: center;
+                        position: relative;
+                        background-color: $theme-color;
+                        padding: 13px 30px;
+                        color: #fff;
+                        width: 100%;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        z-index: 2;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            left: 0;
+                            top: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-color: #000;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all 0.4s ease;
+                            z-index: -1;
+                        }
+
+                        &:hover::before {
+                            opacity: 0.2;
+                            visibility: visible;
+                        }
+
+                        i {
+                            position: absolute;
+                            left: 30px;
+                            top: 14px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .linkedin {
+                        background-color: #0077B5;
+                    }
+
+                    .google {
+                        background-color: #dd4b39;
+                    }
+
+                    .facebook {
+                        background-color: #3b5999;
+                    }
+                }
+            }
+        }
+
+        .or-devider {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+            span {
+                display: inline-block;
+                background: white;
+                padding: 15px 25px;
+            }
+
+            &::before {
+                content: "";
+                height: 1px;
+                width: 100%;
+                top: 50%;
+                left: 0%;
+                margin-top: 1.5px;
+                position: absolute;
+                background: #eee;
+                z-index: -1;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .label {
+                font-size: 15px;
+                font-weight: 500;
+                color: $black;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            .form-control {
+                height: 50px;
+                border: 1px solid #eee;
+                padding: 0px 30px;
+                color: $black;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+
+            .pass {
+                padding-right: 50px;
+            }
+        }
+
+        .button {
+            width: 100%;
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .create-new-account {
+            color: $black;
+            font-size: 15px;
+
+            a {
+                color: $theme-color;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+
+.pos-abs-cr {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+
+    &::before {
+        content: "\eab1";
+        font-family: Lineicons;
+        color: $black;
+        font-size: 17px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 14px;
+        height: 2px;
+        width: 20px;
+        background-color: #555;
+        z-index: 1;
+        transform: rotate(45deg);
+        border-radius: 0px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.pos-abs-cr.show {
+    &::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,214 @@
+@media (max-width: 767px) {
+    .table-responsive .dropdown-menu {
+        position: static !important;
+    }
+}
+@media (min-width: 768px) {
+    .table-responsive {
+        overflow: visible;
+    }
+}
+
+.dropdown-header {
+    color:#2670b9;
+}
+
+.accordion .card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #825ee4;
+    border-bottom: 1px solid
+    rgba(0,0,0,.125);
+    color: white;
+}
+
+.accordion .card-header .btn-link {
+    color: #ffffff;
+}
+
+span.req{
+    color: red;
+}
+
+.select2 {
+    width: 100%!important; /* overrides computed width, 100px in your demo */
+}
+
+ table.break{
+     width: 100%;
+ }
+
+ .break-word{
+     word-break: break-all;
+ }
+
+table.break td, table.break th {
+    white-space: normal;
+}
+
+table.table td, table.table th {
+    white-space: normal;
+}
+
+table.table td:last-child, table.table th:last-child{
+    white-space: nowrap;
+}
+
+div.info table.table td:last-child,div.info  table.table th:last-child {
+    white-space: normal;
+}
+
+.card .table td, .card .table th {
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+
+form label.required:after
+{
+    color: red;
+    content: " *";
+}
+
+
+.select2-container .select2-selection--single {
+    padding-top: 10px;
+    height: calc(1.5em + 1.25rem + 2px) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+
+    margin-top: 7px !important;
+}
+
+.accordion .card-header button{
+    width: 100%;
+    text-align: left;
+}
+
+.accordion .card-header::after{
+    display: none !important;
+}
+
+.accordion .card {
+    margin-bottom: 2px !important;
+}
+
+ul.nav li.nav-item a.active{
+      font-weight: bold;
+}
+
+.select2-selection__arrow {
+    display: block;
+}
+
+.image-box {
+    border: 1px solid #EEEEEE;
+    padding: 10px;
+    display: inline-block;
+    width: 123px;
+    min-height: 147px;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+}
+
+.image-box img{
+    margin-bottom: 5px;
+    vertical-align: middle;
+    border: 0;
+    max-width: 100%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.select2-container .select2-search--inline {
+    display: block;
+}
+
+ul.csv { list-style: none; margin: 0; padding: 0; }
+ul.csv li { display: inline; }
+ul.csv li:after { content: ","; }
+ul.csv li:last-child:after { content: ""; }
+
+.tab-padding{
+    padding: 20px;
+}
+
+.card-invoice {
+    background-color: transparent;
+    border-width: 0; }
+    .card-invoice .card-body {
+      padding: 20px; }
+      @media (min-width: 992px) {
+        .card-invoice .card-body {
+          padding: 0 50px 50px; } }
+  
+  @media (min-width: 768px) {
+    .invoice-header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse; } }
+  
+  .invoice-title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #cdd4e0;
+    font-weight: 700; }
+  
+  .billed-from {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    @media (min-width: 768px) {
+      .billed-from {
+        margin-top: 0; } }
+    .billed-from h6 {
+      color: #1c273c;
+      font-size: 14px;
+      font-weight: 700; }
+    .billed-from p {
+      font-size: 13px;
+      margin-bottom: 0; }
+  
+  .billed-to h6 {
+    color: #1c273c;
+    font-size: 14px;
+    font-weight: 700; }
+  
+  .billed-to p {
+    font-size: 13px;
+    margin-bottom: 0; }
+  
+  .invoice-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    margin-bottom: 0;
+    font-size: 13px; }
+    .invoice-info-row + .invoice-info-row {
+      border-top: 1px dotted #cdd4e0; }
+    .invoice-info-row span:first-child {
+      color: #596882; }
+  
+  .table-invoice thead > tr > th,
+  .table-invoice thead > tr > td {
+    font-size: 11px;
+    font-weight: 700;
+    color: #7987a1; }
+  
+  .table-invoice tbody > tr > th:first-child,
+  .table-invoice tbody > tr > td:first-child {
+    color: #1c273c;
+    font-weight: 500; }
+    .table-invoice tbody > tr > th:first-child .invoice-notes,
+    .table-invoice tbody > tr > td:first-child .invoice-notes {
+      margin-right: 20px; }
+      .table-invoice tbody > tr > th:first-child .invoice-notes .section-label-sm,
+      .table-invoice tbody > tr > td:first-child .invoice-notes .section-label-sm {
+        font-weight: 600; }
+      .table-invoice tbody > tr > th:first-child .invoice-notes p,
+      .table-invoice tbody > tr > td:first-child .invoice-notes p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #031b4e; }

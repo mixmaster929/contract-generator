@@ -1,0 +1,11 @@
+label{
+    font-weight: bold;
+}
+
+#accordionExample .col-md-6{
+    margin-bottom: 30px;
+}
+
+iframe{
+    max-width: 100%;
+}

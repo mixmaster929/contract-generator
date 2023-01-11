@@ -1,0 +1,161 @@
+/*======================================
+    Find Job CSS
+========================================*/
+
+.find-job {
+    background-color: $gray;
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    &.job-list {
+        padding-top: 70px;
+    }
+
+    .single-job {
+        margin-top: 30px;
+        padding: 40px;
+        padding-left: 120px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        position: relative;
+        transition: all 0.4s ease;
+        background-color: $white;
+
+        &:hover {
+            box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+        }
+
+        .job-image {
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            margin-top: -25px;
+
+        }
+
+        .job-content {
+            position: relative;
+
+            h4 {
+                padding-right: 200px;
+                position: relative;
+                padding-bottom: 20px;
+
+                a {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $black;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            p {
+                display: inline-block;
+                border-top: 1px solid #eee;
+                padding-top: 18px;
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    display: inline-block;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    margin-right: 3px;
+                    position: relative;
+                    background: #2042e314;
+                    color: $theme-color;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                        margin-right: 0;
+                    }
+
+                    i {
+                        font-size: 13px;
+                        display: inline-block;
+                        margin-right: 3px;
+                    }
+
+                    a {
+                        color: #777;
+
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .job-button {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+
+            ul {
+                li {
+                    display: inline-block;
+
+                    a {
+                        padding: 5px 20px;
+                        border: 1px solid #eee;
+                        color: $black;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: $white;
+                            background-color: $theme-color;
+                            border-color: transparent;
+                        }
+                    }
+
+                    span {
+                        padding: 5px 20px;
+                        background-color: $theme-color;
+                        color: $white;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-job {
+        .search-nner {
+            padding: 30px;
+            border: 1px solid #eee;
+            background-color: $white;
+            border-radius: 6px;
+
+            input {
+                height: 50px;
+                width: 100%;
+                border: 1px solid #eee;
+                border-radius: 4px;
+                font-size: 14px;
+                color: $black;
+                padding: 0px 20px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,197 @@
+/*======================================
+    Job Category CSS
+========================================*/
+
+.job-category {
+    background-color: $gray;
+
+    &.style2 {
+        .cat-head {
+            padding: 0;
+            box-shadow: none !important;
+            background-color: transparent;
+        }
+
+        .single-cat {
+            box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+            padding: 0;
+            border: none;
+            text-align: left;
+            border-radius: 7px;
+            overflow: hidden;
+            background-color: $white;
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 15px;
+                font-weight: 600;
+                display: inline-block;
+            }
+
+            .top-side {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    transition: all 0.4s ease;
+                    z-index: 0;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: $theme-color;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.4s ease;
+                    z-index: 2;
+                }
+
+
+            }
+
+            .cat-head {
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .bottom-side {
+                padding: 25px 30px;
+                position: relative;
+
+                .available-job {
+                    background-color: $theme-color;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    display: inline-block;
+                    padding: 10px 15px;
+                    position: absolute;
+                    right: 30px;
+                    top: -19px;
+                    border-radius: 6px;
+                    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+                    z-index: 3;
+                }
+            }
+
+            &:hover .top-side:before {
+                opacity: 0.5;
+                visibility: visible;
+            }
+        }
+
+
+    }
+
+    .cat-head {
+        padding: 35px 50px;
+        background-color: $white;
+        border-radius: 5px;
+        box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+    }
+
+    .single-cat {
+        text-align: center;
+        padding: 30px;
+        border: 1px dashed #eee;
+        margin: 15px 0;
+        transition: all 0.4s ease;
+        display: block;
+
+        &:hover {
+            box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+        }
+
+        i {
+            font-size: 26px;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            text-align: center;
+            display: inline-block;
+            background: #2042e31c;
+            color: $theme-color;
+            border-radius: 4px;
+        }
+
+        h3 {
+            display: block;
+            margin-top: 20px;
+            font-size: 15px;
+            color: $black;
+            font-weight: 500;
+            transition: all 0.4s ease;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.all-categories {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 70px;
+
+    .categories-title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .cat-title {
+        font-size: 16px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        border-radius: 4px;
+        background: $theme-color;
+        color: #fff;
+
+        span {
+            font-weight: 400;
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+    }
+
+    ul {
+        margin-bottom: 30px;
+
+        li {
+            display: block;
+            margin-bottom: 7px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                color: #888;
+                padding: 10px 15px;
+                border: 1px solid #eee;
+                display: block;
+                border-radius: 4px;
+
+                &:hover {
+                    color: $white;
+                    background-color: $theme-color;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}

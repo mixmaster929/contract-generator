@@ -1,0 +1,125 @@
+/*======================================
+    About Us CSS
+========================================*/
+
+.about-us {
+    .content-left {
+        position: relative;
+        padding-right: 60px;
+
+
+        .single-img {
+            width: 100%;
+            border-radius: 5px;
+
+            &.minus-margin {
+                position: relative;
+                top: -20px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            right: 4px;
+            bottom: -36px;
+            height: 200px;
+            width: 200px;
+            background-image: url(../images/hero/pattern.png);
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .media-body {
+            padding: 40px 30px;
+            padding-bottom: 40px;
+            border-radius: 5px;
+            background-color: $theme-color;
+            -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+            box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+            display: inline-block;
+            width: 100%;
+            margin-top: 30px;
+            padding-bottom: 48px;
+
+            i {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-align: center;
+                display: block;
+                color: #fff;
+                background-color: #ffffff45;
+                border-radius: 5px;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                font-size: 22px;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 5px;
+                color: $white;
+            }
+
+            p {
+                color: $white;
+            }
+
+        }
+    }
+
+    .content-right {
+        padding-right: 70px;
+        padding-left: 30px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+            line-height: 45px;
+            text-transform: capitalize;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .single-list {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 50px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            i {
+                font-size: 20px;
+                height: 55px;
+                width: 55px;
+                line-height: 55px;
+                text-align: center;
+                display: inline-block;
+                background: #2042e31c;
+                color: $theme-color;
+                border-radius: 4px;
+                position: absolute;
+                left: 0;
+                top: 3px;
+            }
+
+            .list-bod {
+                h5 {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    color: $black;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.az-profile-overview .az-img-user {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+    #login-box{
+        margin:50px;
+    }
+}

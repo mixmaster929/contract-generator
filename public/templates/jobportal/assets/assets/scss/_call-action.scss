@@ -1,0 +1,100 @@
+/*======================================
+    Call Action CSS
+========================================*/
+.call-action {
+    background-image: url('../images/call-action/cat-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+
+    &.style2 {
+        background-color: $theme-color;
+        background-image: none;
+        padding: 70px 0;
+
+        .text {
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+
+        .button {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 26px;
+                height: 2px;
+                width: 48%;
+                border: 1px dashed #fff;
+            }
+
+            .btn {
+                background-color: $white;
+                color: $theme-color;
+                float: right;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .section-title {
+        padding: 0;
+        padding: 0px 50px;
+        margin: 0;
+
+        span {
+            color: $theme-color;
+            background-color: $white;
+        }
+
+        h2 {
+            text-transform: none;
+            color: $white;
+
+            &::before {
+                background-color: $white;
+            }
+        }
+
+        p {
+            color: $white;
+        }
+
+        .button {
+            display: block;
+            margin-top: 50px;
+
+            .btn {
+                background-color: $white;
+                color: $theme-color;
+
+                i {
+                    display: inline-block;
+                    margin-right: 5px;
+                    font-size: 15px;
+                }
+
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
+
+.call-action.overlay::before {
+    background-color: $theme-color;
+    opacity: 0.8;
+    z-index: -1;
+}

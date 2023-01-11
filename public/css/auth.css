@@ -1,0 +1,12 @@
+.az-signin-header{
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .az-signin-wrapper {
+        align-items: normal;
+    }
+}

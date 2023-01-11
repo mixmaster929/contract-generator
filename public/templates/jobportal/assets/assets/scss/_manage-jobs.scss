@@ -1,0 +1,70 @@
+/*======================================
+    Manage Jobs CSS
+========================================*/
+.manage-jobs {
+    background-color: $gray;
+
+    .job-items {
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 6px;
+
+        .manage-list {
+            padding: 15px 0;
+            padding-top: 0;
+            border-bottom: 1px solid #f1f1f1;
+            text-transform: capitalize;
+        }
+
+        .manage-content {
+            padding: 25px 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+
+            .time {
+                background: #2042e314;
+                color: $theme-color;
+                padding: 5px 14px;
+                border-radius: 3px;
+                font-size: 13px;
+            }
+
+            .can-img {
+                img {
+                    width: 50px;
+                    margin: 5px 15px;
+                    border-radius: 50%;
+                }
+            }
+
+            p {
+                i {
+                    font-size: 14px;
+                }
+            }
+
+            h3 {
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .location {
+                font-size: 14px;
+                display: block;
+                margin-top: 5px;
+
+                i {
+                    display: inline-block;
+                    margin-right: 3px;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

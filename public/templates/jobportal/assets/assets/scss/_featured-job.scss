@@ -1,0 +1,171 @@
+/*======================================
+    Featured Job CSS
+========================================*/
+.featured-job {
+    background-color: $white;
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .single-job {
+        box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+        margin-top: 30px;
+        border-radius: 5px;
+        position: relative;
+        border-radius: 6px;
+
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .feature {
+            position: absolute;
+            top: 16px;
+            right: -36px;
+            padding: 3px 35px;
+            font-size: 12px;
+            color: #fff;
+            background-color: $theme-color;
+            line-height: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            transform: rotate(45deg);
+            z-index: 1;
+            clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%, 20% 0%);
+        }
+
+        .shape {
+            &::before {
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 7px;
+                right: 77px;
+                top: -7px;
+                background-color: #0221b3;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                right: -6px;
+                top: 76px;
+                width: 7px;
+                height: 8px;
+                background-color: #0221b3;
+            }
+        }
+
+        .image {
+            overflow: hidden;
+            border-radius: 6px 6px 0 0;
+
+            img {
+                width: 100%;
+                transition: all 0.4s ease;
+            }
+        }
+
+        .content {
+            background-color: $white;
+            padding: 20px 30px 30px 30px;
+            border-radius: 0 0 6px 6px;
+
+            h4 {
+                display: block;
+                margin-bottom: 18px;
+                padding-bottom: 15px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 100%;
+                    background-color: #eee;
+                }
+
+                a {
+                    font-size: 19px;
+                    font-weight: 500;
+                    color: $black;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    display: inline-block;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    margin-right: 3px;
+                    position: relative;
+                    background: #2042e314;
+                    color: $theme-color;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                        margin-right: 0;
+                    }
+
+                    i {
+                        font-size: 13px;
+                        display: inline-block;
+                        margin-right: 3px;
+                    }
+
+                }
+            }
+
+            p {
+                font-size: 14px;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .button {
+                display: block;
+                margin-top: 20px;
+
+                .btn {
+                    padding: 12px 34px;
+                    margin-right: 10px;
+
+                    i {
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                .btn.save {
+                    background-color: transparent;
+                    color: $black;
+                    border: 1px solid #eee;
+
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $white;
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

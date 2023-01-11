@@ -1,0 +1,12 @@
+ul.csv { list-style: none; margin: 0; padding: 0; }
+ul.csv li { display: inline; }
+ul.csv li:after { content: ","; }
+ul.csv li:last-child:after { content: ""; }
+.az-profile-overview .az-img-user {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.az-profile-work-list .media-body span{
+    color: #7987a1;
+}
